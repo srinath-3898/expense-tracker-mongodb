@@ -1,7 +1,7 @@
 const express = require("express");
-const { protect } = require("../middlewares/authMiddleware");
-const { premium } = require("../middlewares/premiumMiddleware");
-const { leaderboard, download } = require("../controllers/premiumController");
+const { protect } = require("../middlewares/auth");
+const { premium } = require("../middlewares/premium");
+const { leaderboard, download } = require("../controllers/premium");
 
 const router = express.Router();
 

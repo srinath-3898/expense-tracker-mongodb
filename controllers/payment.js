@@ -1,4 +1,4 @@
-const Payment = require("../models/paymentModel");
+const Payment = require("../models/payment");
 const Razorpay = require("razorpay");
 require("dotenv").config();
 

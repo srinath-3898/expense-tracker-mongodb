@@ -1,7 +1,7 @@
-const User = require("../models/userModel");
-const { getExpenses } = require("../services/userServices");
-const { uploadToS3 } = require("../services/s3Services");
-const Download = require("../models/downloadModel");
+const User = require("../models/user");
+const { getExpenses } = require("../services/user");
+const { uploadToS3 } = require("../services/s3");
+const Download = require("../models/download");
 
 const leaderboard = async (req, res) => {
   try {

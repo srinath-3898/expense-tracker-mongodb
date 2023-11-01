@@ -4,8 +4,8 @@ const {
   getAllExpenses,
   editExpense,
   deleteExpense,
-} = require("../controllers/expenseController");
-const { protect } = require("../middlewares/authMiddleware");
+} = require("../controllers/expense");
+const { protect } = require("../middlewares/auth");
 const router = express.Router();
 
 router.post("/add-expense", protect, addExpense);

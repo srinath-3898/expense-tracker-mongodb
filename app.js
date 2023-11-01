@@ -1,6 +1,5 @@
 const express = require("express");
 const cors = require("cors");
-const sequelize = require("./configs/databaseConfig");
 const connectDB = require("./configs/databaseConfig");
 require("dotenv").config();
 
@@ -10,10 +9,10 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-app.use("/user", require("./routes/userRoutes"));
-app.use("/expense", require("./routes/expenseRoutes"));
-app.use("/payment", require("./routes/paymentRoutes"));
-app.use("/premium", require("./routes/premiumRoutes"));
+app.use("/user", require("./routes/user"));
+app.use("/expense", require("./routes/expense"));
+app.use("/payment", require("./routes/payment"));
+app.use("/premium", require("./routes/premium"));
 
 const port = process.env.PORT;
 

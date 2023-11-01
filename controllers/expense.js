@@ -1,5 +1,5 @@
-const Expense = require("../models/expenseModel");
-const { getExpenses } = require("../services/userServices");
+const Expense = require("../models/expense");
+const { getExpenses } = require("../services/user");
 
 const getAllExpenses = async (req, res) => {
   try {
